@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Mengatur gaya untuk form container */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Mengatur gaya untuk judul */
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Mengatur gaya untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Mengatur gaya untuk setiap baris tabel */
+tr {
+    margin-bottom: 10px;
+}
+
+/* Mengatur gaya untuk setiap sel dalam tabel */
+td {
+    padding: 10px;
+}
+
+/* Mengatur gaya untuk input teks */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Mengatur gaya untuk input radio dan checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Mengatur gaya untuk label input radio dan checkbox */
+.inline {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Mengatur gaya untuk tombol submit, reset, dan button */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+/* Mengatur gaya responsif */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+
+    td:first-child {
+        margin-top: 10px;
+    }
+
+    td:nth-child(2) {
+        margin-bottom: 10px;
+    }
+}

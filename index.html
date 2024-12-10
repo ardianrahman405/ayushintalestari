@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tambah Data</title>
+    <style>
+        /* Mengatur gaya dasar untuk tubuh halaman */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* Mengatur gaya untuk form container */
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+
+        /* Mengatur gaya untuk judul */
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-top: 42px;
+            font-size: 1.5em;
+        }
+
+        /* Mengatur gaya untuk tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        /* Mengatur gaya untuk setiap baris tabel */
+        tr {
+            margin-bottom: 10px;
+        }
+
+        /* Mengatur gaya untuk setiap sel dalam tabel */
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        /* Mengatur gaya untuk input teks */
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Mengatur gaya untuk input radio dan checkbox */
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        /* Mengatur gaya untuk label input radio dan checkbox */
+        .inline {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /* Mengatur gaya untuk tombol submit, reset, dan button */
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"] {
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Mengatur gaya responsif */
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 15px;
+            }
+
+            td {
+                display: block;
+                width: 100%;
+                padding: 5px 0;
+            }
+
+            td:first-child {
+                margin-top: 10px;
+            }
+
+            td:nth-child(2) {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h3>Tambah Data</h3>
+        <form action="" method="POST">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>ID Pegawai</td>
+                    <td><input type="number" name="id_pegawai"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal</td>
+                    <td><input type="date" name="tanggal"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <label class="inline"><input type="radio" name="jk" value="Laki-laki"> Laki-laki</label>
+                        <label class="inline"><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td>
+                        <label class="inline"><input type="checkbox" name="hobi" value="Berenang"> Berenang</label>
+                        <label class="inline"><input type="checkbox" name="hobi" value="Menyanyi"> Menyanyi</label>
+                    </td>            
+                </tr>
+                <tr>
+                    <td>Jabatan</td>
+                    <td>
+                        <select name="jabatan">
+                            <option value="Direktur">Direktur</option>
+                            <option value="Staff">Staff</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td><textarea name="alamat"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Simpan">
+                        <input type="reset" value="Reset">
+                        <input type="button" value="Simpan">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
